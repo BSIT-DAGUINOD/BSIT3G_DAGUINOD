@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #191919;
+    color: white;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fcfcfc; /* Fixed color code */
+}
+
+.contact h2 {
+    color: #00bcd4;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.contact .content p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.container .contactInfo {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactInfo .icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fd4a2b;
+}
+
+.contactInfo .text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #fcfcfc; /* Fixed color code */
+    font-weight: 300;
+}
+
+.contactInfo h3 {
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm {
+    width: 45%;
+    padding: 40px;
+    background: #eeebeb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox {
+position: relative;
+width: 100%;
+margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+background-color: #fcfafa;
+border-radius: 4px;
+}
+
+/* Focused state for input and textarea */
+.contactForm .inputBox input:focus,
+.contactForm .inputBox textarea:focus {
+border-color: #fd4a2b;
+}
+
+/* Label styling */
+.contactForm .inputBox span {
+position: absolute;
+left: 10px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 14px;
+color: #aaa;
+pointer-events: none;
+transition: 0.3s;
+}
+
+/* Focus or when input has text */
+.contactForm .inputBox input:focus + span,
+.contactForm .inputBox textarea:focus + span,
+.contactForm .inputBox input:valid + span,
+.contactForm .inputBox textarea:valid + span {
+top: -10px;
+font-size: 12px;
+color: #fd4a2b;
+}
+
+
+.contactForm .inputBox textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    background-color: #f9004d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background-color: #e3431e;
+}
+
+.backButton {
+    display: inline-block;
+    background-color: #f9004d;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+    background-color: #e3431e;
+}
+
+/* Success message styles */
+.successMessage {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+
+    .contact .content h2 {
+        font-size: 28px;
+    }
+
+    .contact .content p {
+        font-size: 16px;
+    }
+}
