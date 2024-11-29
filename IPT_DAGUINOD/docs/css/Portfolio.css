@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden; 
+            background: #b0e0e6;
+        }
+
+        section {
+            width: 100%;
+            position: relative;
+        }
+
+        .navbar {
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem; 
+            background: #fd4a2b;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 2rem; 
+            color: #fff;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        ol {
+            list-style-type: none;
+            display: flex; 
+        }
+
+        ol li {
+            margin: 0 1rem; 
+        }
+
+        li a {
+            display: block;
+            color: #fff;
+            font-size: 1.5vw;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        li:hover a {
+            color: #000;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding-top: 100px;
+        }
+
+        .text_container {
+            width: 50%;
+            padding-left: 5rem;
+        }
+
+        .text_container h2 {
+            font-size: 5vw;
+            font-weight: 900;
+            line-height: 5vw;
+            text-transform: capitalize;
+        }
+
+        .text_container h2::first-line {
+            color: #f9004d;
+            text-shadow: 0 5px 10px rgba(132, 16, 91, 0.5);
+        }
+
+        .text_container h5 {
+            color: #f9004d;
+            font-size: 2vw;
+            font-weight: 300;
+            text-align: left;
+            margin-top: 10px;
+            margin-right: 10vw;
+            text-transform: capitalize;
+        }
+
+        .text_container p {
+            font-size: 1vw;
+            font-weight: 400;
+            color: #f9004d;
+            margin-top: 10px;
+        }
+
+        .text_container .btn {
+            display: inline-block;
+            color: #222;
+            background: #fff;
+            margin-top: 2vw;
+            font-size: 1.5vw;
+            text-decoration: none;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            padding: 6px 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .text_container .btn:hover {
+            letter-spacing: 3px;
+            padding: 6px 18px;
+        }
+
+        .image_container {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .imgbox {
+            position: relative;
+            width: 500px; 
+            height: 500px; 
+            border-radius: 50%; 
+            overflow: hidden; 
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
+            margin-right: 10vw;
+        }
+
+        .imgbox img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; 
+        }
+
+        .icons {
+            position: fixed;
+            top: 50%;
+            right: -15vw;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+
+        .icons .fa {
+            width: 20vw;
+            padding: 1vw;
+            font-size: 2.5vw;
+            cursor: pointer;
+            background: #fff;
+            transition: 0.5s ease;
+        }
+
+        .icons .fa:hover {
+            color: #f9004d;
+            transform: translateX(-8vw);
+        }
+
+        .icons .fa span {
+            position: relative;
+            font-size: 1.8vw;
+            bottom: 0.3vw;
+            margin-left: 2.5vw;
+        }
